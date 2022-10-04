@@ -4,10 +4,145 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <title>Homepage</title>
   </head>
+
   <body>
-    <h1>Homepage</h1>
-    <a href="about.html">About me</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      id="navBar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Éva Kozma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contactMe">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="introduction">
+      <h2>👋🏻Hi I am</h2>
+      <h1 id="name">Éva Kozma</h1>
+      <h3 class="nationality">
+        🇭🇺 Currently on sabbatical, based in Budapest, Hungary
+      </h3>
+      <div class="directions">
+        <a href="about.html#contactMe" target="_blank" class="contactMeLink"
+          >Contact me</a
+        >
+        <a href="about.html" target="_blank" class="aboutMeLink">About me</a>
+      </div>
+    </div>
+    //
+    <div class="container" id="projects">
+      <div class="flex-row d-flex">
+        <div class="col-md-6">
+          <img
+            src="img/Yoga.png"
+            alt="Yoga app"
+            id="yoga"
+            class="image-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6" id="yogaText">
+          <h2>Yoga App</h2>
+          <p>
+            Yoga is a group of physical, mental, and spiritual practices or
+            disciplines which originated in ancient India and aim to control
+            (yoke) and still the mind, recognizing a detached
+            witness-consciousness untouched by the mind (Chitta) and mundane
+            suffering (Duḥkha). There is a wide variety of schools of yoga,
+            practices, and goals in Hinduism, Buddhism, and Jainism, and
+            traditional and modern yoga is practiced worldwide.
+          </p>
+          <br />
+          <a href="index.html#introduction" class="button">Launch Yoga App</a>
+        </div>
+      </div>
+      <div class="flex-row d-flex">
+        <div class="col-md-6" id="rwaText">
+          <h2 class="mb-3">Weather App</h2>
+          <p>Check out the weather conditionat your destination!</p>
+          <br />
+          <a href="https://dulcet-axolotl-f6d7f3.netlify.app/" class="button"
+            >Launch Weather App</a
+          >
+        </div>
+        <div class="col-md-6">
+          <img
+            src="img/WeatherApp.png"
+            alt="Live Weather app"
+            id="rwa"
+            class="image-fluid rounded"
+          />
+        </div>
+      </div>
+
+      <div class="flex-row d-flex">
+        <div class="col-md-6">
+          <img
+            src="img/Yogurt.png"
+            alt="Greek Yogurt"
+            id="gy"
+            class="image-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6" id="gyText">
+          <h2 class="mb-3">Greek Yogurt</h2>
+          <p>
+            It's an old yogurt, a nutritious and delicious yogurt, an insanely
+            popular yogurt, and not even Greek at all! Records of yogurt in
+            Greece begin in the 5th century BCE with the writings of Herodotus,
+            but in reality, the process of straining yogurt (making it “Greek”)
+            began somewhere in the Middle East. eta!).
+          </p>
+          <br />
+          <a href="index.html#name" class="button">Launch Yogurt App</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
